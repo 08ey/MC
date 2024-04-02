@@ -1,7 +1,5 @@
 <?
 $PERM["urlrewrite.php"]["8"]="W";
-$PERM["index.php"]["8"]="W";
-$PERM["index.php"]["5"]="W";
 $PERM["favicon.ico"]["8"]="W";
 $PERM["README.md"]["8"]="W";
 $PERM["500.html"]["8"]="W";
