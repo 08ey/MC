@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?> <?
 IncludeTemplateLangFile(__FILE__);
-?> <?$APPLICATION->ShowHead();?> <?
+?><?$APPLICATION->ShowHead();?> <?
  use Bitrix\Main\Page\Asset; 
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/fonts/icomoon/style.css'); 
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/bootstrap.min.css'); 
@@ -76,7 +76,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/style.css');
 	<div class="site-navbar">
 		<div class="container py-1">
 			<div class="row align-items-center">
-				<?$APPLICATION->IncludeComponent(
+				 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -85,27 +85,31 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/style.css');
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/local/templates/homeSample/include/logo.php"
 	)
-);?>
-				 <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"horizontal_multilevel1", 
-	array(
+);?> <?$APPLICATION->IncludeComponent(
+	"bitrix:menu",
+	"horizontal_multilevel1",
+	Array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",
+		"COMPONENT_TEMPLATE" => "horizontal_multilevel1",
 		"DELAY" => "N",
 		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(
-		),
+		"MENU_CACHE_GET_VARS" => array(),
 		"MENU_CACHE_TIME" => "3600",
 		"MENU_CACHE_TYPE" => "A",
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "horizontal_multilevel1"
-	),
-	false
+		"USE_EXT" => "N"
+	)
 );?>
 			</div>
 		</div>
 	</div>
 </div>
+<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "chain", Array(
+	"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+		"START_FROM" => "1",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+	),
+	false
+);?>
