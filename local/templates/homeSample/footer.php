@@ -42,7 +42,7 @@
 		"PATH" => "/local/templates/homeSample/include/follow.php"
 	)
 );?>
-	<div class="row pt-5 mt-5 text-center">
+	</div>
 		<?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -54,7 +54,6 @@
 	)
 );?>
 	</div>
-</div>
 </footer>
   <?
  use Bitrix\Main\Page\Asset; 
