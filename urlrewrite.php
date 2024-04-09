@@ -8,7 +8,7 @@ $arUrlRewrite=array (
     'PATH' => '/About/jobVacancies/index.php',
     'SORT' => 100,
   ),
-  5 => 
+  11 => 
   array (
     'CONDITION' => '#^/About/News/#',
     'RULE' => '',
