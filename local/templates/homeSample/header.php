@@ -37,24 +37,26 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/style.css');
 			<div class="row align-items-center">
 				<div class="col-6 col-md-6">
 					<p class="mb-0">
+
 						 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/homeSample/include/phone.php"
-	)
-);?><?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/homeSample/include/mail.php"
-	)
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => "/local/templates/homeSample/include/phone.php"
+								)
+							);?>
+								<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => "/local/templates/homeSample/include/mail.php"
+								)
 );?>
 					</p>
 				</div>
@@ -85,27 +87,31 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/style.css');
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/local/templates/homeSample/include/logo.php"
 	)
-);?> <?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"horizontal_multilevel1",
-	Array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"COMPONENT_TEMPLATE" => "horizontal_multilevel1",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N"
-	)
-);?>
+);?> 
+			<div class="col-4 col-md-4 col-lg-8">
+				<nav class="site-navigation text-right text-md-right" role="navigation">
+					<?$APPLICATION->IncludeComponent(
+					"bitrix:menu",
+					"horizontal_multilevel1",
+					Array(
+						"ALLOW_MULTI_SELECT" => "N",
+						"CHILD_MENU_TYPE" => "left",
+						"COMPONENT_TEMPLATE" => "horizontal_multilevel1",
+						"DELAY" => "N",
+						"MAX_LEVEL" => "2",
+						"MENU_CACHE_GET_VARS" => array(),
+						"MENU_CACHE_TIME" => "3600",
+						"MENU_CACHE_TYPE" => "A",
+						"MENU_CACHE_USE_GROUPS" => "Y",
+						"ROOT_MENU_TYPE" => "top",
+						"USE_EXT" => "N"
+					)
+				);?>
+				</nav>
+			</div>
 			</div>
 		</div>
 	</div>
-</div>
 <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "chain", Array(
 	"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
 		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)

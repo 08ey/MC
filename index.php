@@ -61,6 +61,7 @@ $APPLICATION->SetTitle("Главная");?><?$APPLICATION->IncludeComponent(
 <div class="py-5">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 			 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -70,7 +71,7 @@ $APPLICATION->SetTitle("Главная");?><?$APPLICATION->IncludeComponent(
 		"EDIT_TEMPLATE" => "",
 		"PATH" => SITE_TEMPLATE_PATH."/include/why1.php"
 	)
-);?> <?$APPLICATION->IncludeComponent(
+);?> </div><div class="col-md-6 col-lg-4 mb-3 mb-lg-0"><?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -79,7 +80,7 @@ $APPLICATION->SetTitle("Главная");?><?$APPLICATION->IncludeComponent(
 		"EDIT_TEMPLATE" => "",
 		"PATH" => SITE_TEMPLATE_PATH."/include/why2.php"
 	)
-);?> <?$APPLICATION->IncludeComponent(
+);?></div><div class="col-md-6 col-lg-4 mb-3 mb-lg-0"> <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -88,7 +89,7 @@ $APPLICATION->SetTitle("Главная");?><?$APPLICATION->IncludeComponent(
 		"EDIT_TEMPLATE" => "",
 		"PATH" => SITE_TEMPLATE_PATH."/include/why3.php"
 	)
-);?>
+);?></div>
 		</div>
 	</div>
 </div>

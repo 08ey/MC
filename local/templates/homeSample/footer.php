@@ -1,59 +1,64 @@
 <footer class="site-footer">
-<div class="container">
-	<div class="row">
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/homeSample/include/about.php"
-	)
-);?>
-		
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"FootMenu", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "Y",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "FootMenu",
-		"MENU_THEME" => "site"
-	),
-	false
-);?>
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/homeSample/include/follow.php"
-	)
-);?>
-	</div>
-		<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/homeSample/include/bott.php"
-	)
-);?>
-	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+			 	<div class="mb-5">
+					 <?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"AREA_FILE_SUFFIX" => "inc",
+					"EDIT_TEMPLATE" => "",
+					"PATH" => "/local/templates/homeSample/include/about.php"
+				)
+			);?>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-5 mb-lg-0">
+				<?$APPLICATION->IncludeComponent(
+			"bitrix:menu", 
+			"FootMenu", 
+			array(
+				"ALLOW_MULTI_SELECT" => "N",
+				"CHILD_MENU_TYPE" => "left",
+				"DELAY" => "N",
+				"MAX_LEVEL" => "2",
+				"MENU_CACHE_GET_VARS" => array(
+				),
+				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_TYPE" => "Y",
+				"MENU_CACHE_USE_GROUPS" => "Y",
+				"ROOT_MENU_TYPE" => "top",
+				"USE_EXT" => "N",
+				"COMPONENT_TEMPLATE" => "FootMenu",
+				"MENU_THEME" => "site"
+			),
+			false
+);?></div>
+			</div>
+			<div class="col-lg-4 mb-5 mb-lg-0">
+				 <?$APPLICATION->IncludeComponent(
+			"bitrix:main.include",
+			"",
+			Array(
+				"AREA_FILE_SHOW" => "file",
+				"AREA_FILE_SUFFIX" => "inc",
+				"EDIT_TEMPLATE" => "",
+				"PATH" => "/local/templates/homeSample/include/follow.php"
+			)
+		);?>
+		</div></div>
+				<?$APPLICATION->IncludeComponent(
+			"bitrix:main.include",
+			"",
+			Array(
+				"AREA_FILE_SHOW" => "file",
+				"AREA_FILE_SUFFIX" => "inc",
+				"EDIT_TEMPLATE" => "",
+				"PATH" => "/local/templates/homeSample/include/bott.php"
+			)
+		);?>
 </footer>
   <?
  use Bitrix\Main\Page\Asset; 
