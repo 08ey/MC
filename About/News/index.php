@@ -34,10 +34,13 @@ $APPLICATION->SetTitle("Новости");
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "8",
+		"IBLOCK_ID" => "1",
 		"IBLOCK_TYPE" => "news",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
@@ -79,11 +82,8 @@ $APPLICATION->SetTitle("Новости");
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
-		"COMPONENT_TEMPLATE" => ".default",
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"USE_SHARE" => "N",
+		"COMPONENT_TEMPLATE" => ".default",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
@@ -92,13 +92,15 @@ $APPLICATION->SetTitle("Новости");
 	),
 	false
 );?><?$APPLICATION->IncludeComponent(
-	"mcart:mcart.iblockelement.like",
-	"",
-	Array(
+	"mcart:mcart.iblockelement.like", 
+	".default", 
+	array(
 		"CACHE_TIME" => "86400",
 		"CACHE_TYPE" => "A",
 		"ELEMENT_ID" => "",
-		"IBLOCK_ID" => "",
-		"IBLOCK_TYPE" => "rest_entity"
-	)
+		"IBLOCK_ID" => "8",
+		"IBLOCK_TYPE" => "news",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
