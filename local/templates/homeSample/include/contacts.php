@@ -1,11 +1,9 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("contacts");
-?><div style="display:flex; flex-direction:column; align-items:center">
-	<h2>Email:</h2><br>
- <a href="#">feedback@arenda.com</a><br>
-	<h2>Номера поддержки:</h2><br>
- <a href="#">8(800)555-35-35</a><br>
- <a href="#">+7(499)-173-09-09</a><br>
-</div>
-<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<h3 class="h6 text-black mb-3 text-uppercase">Contact Info</h3>
+              <p class="mb-0 font-weight-bold">Address</p>
+              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
