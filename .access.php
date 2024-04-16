@@ -1,4 +1,7 @@
 <?
+$PERM["video"]["*"]="R";
+$PERM["online"]["*"]="R";
+$PERM["desktop_app"]["*"]="R";
 $PERM["urlrewrite.php"]["8"]="W";
 $PERM["favicon.ico"]["8"]="W";
 $PERM["README.md"]["8"]="W";

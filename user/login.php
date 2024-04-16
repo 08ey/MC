@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новая страница");
+$APPLICATION->SetTitle("login");
 ?><div class="site-section">
 	<div class="container">
 		<div class="row">
@@ -20,5 +20,4 @@ $APPLICATION->SetTitle("Новая страница");
 			</div>
 		</div>
 	</div>
-</div>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

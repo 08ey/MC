@@ -1,11 +1,35 @@
 <?php
 $arUrlRewrite=array (
+  12 => 
+  array (
+    'CONDITION' => '#^/online/([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',
+    'RULE' => 'alias=$1',
+    'ID' => NULL,
+    'PATH' => '/desktop_app/router.php',
+    'SORT' => 100,
+  ),
+  14 => 
+  array (
+    'CONDITION' => '#^/video/([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',
+    'RULE' => 'alias=$1&videoconf',
+    'ID' => 'bitrix:im.router',
+    'PATH' => '/desktop_app/router.php',
+    'SORT' => 100,
+  ),
   6 => 
   array (
     'CONDITION' => '#^/About/jobVacancies/#',
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/About/jobVacancies/index.php',
+    'SORT' => 100,
+  ),
+  13 => 
+  array (
+    'CONDITION' => '#^/online/(/?)([^/]*)#',
+    'RULE' => '',
+    'ID' => NULL,
+    'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
   11 => 
