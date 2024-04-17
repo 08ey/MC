@@ -5,32 +5,22 @@ $APPLICATION->SetTitle("register");
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-8 mb-5">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.register", 
-	"register", 
-	array(
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:main.register",
+	"register",
+	Array(
 		"AUTH" => "Y",
-		"REQUIRED_FIELDS" => array(
-			0 => "EMAIL",
-			1 => "TITLE",
-		),
+		"REQUIRED_FIELDS" => array("EMAIL","TITLE"),
 		"SET_TITLE" => "Y",
-		"SHOW_FIELDS" => array(
-			0 => "EMAIL",
-			1 => "TITLE",
-		),
+		"SHOW_FIELDS" => array("EMAIL","TITLE"),
 		"SUCCESS_PAGE" => "",
-		"USER_PROPERTY" => array(
-			0 => "UF_USER",
-		),
+		"USER_PROPERTY" => array("UF_USER"),
 		"USER_PROPERTY_NAME" => "",
-		"USE_BACKURL" => "Y",
-		"COMPONENT_TEMPLATE" => "register"
-	),
-	false
+		"USE_BACKURL" => "Y"
+	)
 );?>
 			</div>
 		</div>
 	</div>
 </div>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

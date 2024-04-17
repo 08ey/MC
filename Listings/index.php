@@ -1,9 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Объявления");
-?>
-
-<?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"listings1", 
 	array(
@@ -20,7 +18,6 @@ $APPLICATION->SetTitle("Объявления");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => "listings1",
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
@@ -41,6 +38,7 @@ $APPLICATION->SetTitle("Объявления");
 			6 => "PRICE",
 			7 => "IMG_GAL",
 			8 => "ADD_MAT",
+			9 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -49,6 +47,7 @@ $APPLICATION->SetTitle("Объявления");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
+		"HEADER" => "Объявления",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "advertise",
@@ -96,6 +95,8 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
+		"COMPONENT_TEMPLATE" => "listings1",
+		"FILTER" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "index.php/",
 			"section" => "",
@@ -103,6 +104,4 @@ $APPLICATION->SetTitle("Объявления");
 		)
 	),
 	false
-);?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

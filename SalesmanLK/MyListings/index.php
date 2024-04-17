@@ -90,6 +90,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "listings1",
+		"FILTER" => "Y",
 		"VARIABLE_ALIASES" => array(
 			"SECTION_ID" => "SECTION_ID",
 			"ELEMENT_ID" => "ELEMENT_ID",
