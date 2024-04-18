@@ -168,7 +168,7 @@ class AgentsList extends CBitrixComponent implements Controllerable, Errorable
          * Получить Избранных агентов для текущего пользователя записать их в массив $this->arResult['STAR_AGENTS']
          * Это можно зделать с помощью CUserOptions::GetOption
          */ 
-         $this->arResult['STAR_AGENTS'] = CUserOptions::GetOption("agents", "agent_star");
+         $this->arResult['STAR_AGENTS'] = CUserOptions::GetOption("agent", "agents_star");
         /*
          * Данного метода нет в документации, код метода и его параметры можно найти в ядре (/bitrix/modules/main/) или в гугле
          * $category - это категория настройки, можете придумать любую, например mcart_agent

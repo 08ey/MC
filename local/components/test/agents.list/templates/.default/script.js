@@ -35,8 +35,7 @@ function clickStar(event) {
                     console.log(response); // консоле можно будет увидеть ответ от бэка, для разработки в конечном коде лучше убрать
                     let data = response.data;
                     if (data['action'] == 'success') {
-						this.classList.add("active");
-						console.log(this);
+						this.classList.toggle("active");
                         // Отобразить пользоватиелю, что агент добавлен в избраное (желтая звездочка, есть в верстке)
                     }
 
