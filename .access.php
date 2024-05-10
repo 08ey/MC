@@ -1,4 +1,5 @@
 <?
+$PERM["bitrix"]["8"]="D";
 $PERM["video"]["*"]="R";
 $PERM["online"]["*"]="R";
 $PERM["desktop_app"]["*"]="R";
@@ -38,6 +39,5 @@ $PERM["BuyerLK"]["6"]="X";
 $PERM["BuyerLK"]["*"]="D";
 $PERM["About"]["8"]="W";
 $PERM[".git"]["8"]="W";
-$PERM["bitrix"]["8"]="D";
 $PERM["/"]["*"]="R";
 ?>
